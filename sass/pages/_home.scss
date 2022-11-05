@@ -1,0 +1,156 @@
+$green_one: #9cc1b4;
+$green_two: #688b80;
+$dark_grey: #474554;
+$light_grey: #d9d9d9;
+
+header {
+  .nav_wrap {
+    // border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #logo {
+    width: 140px;
+    margin-left: 15px;
+  }
+
+  nav {
+    // border: 2px solid red;
+    width: 80%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    li {
+      text-align: center;
+      list-style: none;
+      width: 12%;
+      a {
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        background-color: rgb(211, 211, 211);
+        border-radius: 10px;
+        box-shadow: 2px 2px 8px rgba(grey, 0.2);
+        color: black;
+      }
+    }
+  }
+  .header_image {
+    // border: 1px solid red;
+    height: 60vh;
+    background: url("../images/lukas-mann-_2rLU2V0ezA-unsplash.jpg") center /
+      cover no-repeat;
+  }
+}
+
+main {
+  padding: 300px 0 0;
+  position: relative;
+  .main_heading {
+    top: -150px;
+    left: 50px;
+    position: absolute;
+    // border: 2px solid red;
+    .background_shape {
+      height: 280px;
+      width: 280px;
+      border-radius: 20px;
+      background-color: $green_one;
+    }
+
+    .header_text {
+      position: absolute;
+      background-color: white;
+      top: 20px;
+      left: 50px;
+      color: $green_two;
+      width: 400px;
+      border-radius: 20px;
+      height: 250px;
+      //   border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      p {
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .location_cards {
+    background: linear-gradient(white 35%, $green_one 35%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    // border: 2px solid red;
+    padding: 50px 0;
+    .linebreak {
+      height: 2px;
+      color: darkgrey;
+      flex-basis: 100%;
+    }
+    .card {
+      background-color: $light_grey;
+      padding: 20px;
+      width: 300px;
+      height: 400px;
+      //   border: 2px solid black;
+      border-radius: 20px;
+      .card_img {
+        width: 90%;
+        margin: 0 auto 25px;
+        img {
+          border-radius: 25px;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  border: 2px solid green;
+  display: flex;
+  background-color: $dark_grey;
+  color: white;
+  .address {
+    text-align: right;
+  }
+  h3 {
+    margin-top: 50px;
+  }
+  .social_wrap {
+    margin-top: 15px;
+    // border: 2px solid white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    div {
+      width: 50px;
+    }
+  }
+  section {
+    padding: 50px;
+    flex-basis: 50%;
+    // border: 2px solid purple;
+  }
+  form {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    input,
+    textarea {
+      margin-bottom: 15px;
+    }
+    [type="submit"] {
+      width: 150px;
+      background-color: $green_one;
+    }
+  }
+}
